@@ -8,8 +8,7 @@
   "download-photos": "copy",
   "cleanup": true,
   "photo-quality": 100,
-  "large-size": 800,
-  "theme": "cards",
+  "theme": "flow",
   "css": "./custom.css",
   "footer": "Weitian Chen",
   "usage-stats": false
