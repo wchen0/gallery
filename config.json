@@ -8,6 +8,7 @@
   "download-photos": "copy",
   "cleanup": true,
   "photo-quality": 100,
+  "thumb-size": 300,
   "theme": "flow",
   "css": "./custom.css",
   "footer": "Weitian Chen",
