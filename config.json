@@ -7,6 +7,7 @@
   "sort-albums-direction": "desc",
   "download-photos": "copy",
   "cleanup": true,
+  "photo-quality": 100,
   "theme": "cards",
   "css": "./custom.css",
   "footer": "Weitian Chen",
