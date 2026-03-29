@@ -8,16 +8,9 @@ body {
     display: none !important;
 }
 
-/* Hide captions in the thumbnail grid */
-.item-summary,
-.caption,
-figcaption {
-    display: none !important;
-}
-
 /* Shrink the individual clicked photo in the LightGallery pop-up by 10% */
 .lg-image {
-    max-width: 70% !important;
-    max-height: 70% !important;
+    max-width: 72% !important;
+    max-height: 72% !important;
     margin: auto !important;
 }
