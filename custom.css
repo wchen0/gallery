@@ -15,34 +15,9 @@ figcaption {
     display: none !important;
 }
 
-/* Force 'flow' theme into a 2-column grid on mobile phones */
-@media (max-width: 768px) {
-    /* Convert the main gallery container into a CSS Grid */
-    #media {
-        display: grid !important;
-        grid-template-columns: repeat(2, 1fr) !important; /* Change the '2' to a '3' if you want 3 photos per row */
-        gap: 4px !important;
-        height: auto !important; /* Overrides the Javascript's hardcoded height */
-    }
-
-    /* Strip away the absolute positioning set by the Javascript */
-    #media > a, 
-    #media > div,
-    .justified-gallery > a {
-        position: static !important; 
-        width: 100% !important; 
-        height: 160px !important; /* This controls how tall the mobile photos are */
-        margin: 0 !important;
-    }
-
-    /* Ensure the images crop perfectly to fill the new grid squares */
-    #media > a > img, 
-    #media > div > img,
-    .justified-gallery > a > img {
-        position: static !important;
-        width: 100% !important;
-        height: 100% !important;
-        object-fit: cover !important;
-        margin: 0 !important;
-    }
+/* Shrink the individual clicked photo in the LightGallery pop-up by 10% */
+.lg-image {
+    max-width: 90% !important;
+    max-height: 90% !important;
+    margin: auto !important;
 }
