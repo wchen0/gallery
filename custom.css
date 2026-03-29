@@ -2,3 +2,15 @@
 body {
     font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
 }
+
+/* Hide captions in the full-screen LightGallery view */
+.lg-sub-html {
+    display: none !important;
+}
+
+/* Hide captions in the thumbnail grid */
+.item-summary,
+.caption,
+figcaption {
+    display: none !important;
+}
