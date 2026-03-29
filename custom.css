@@ -17,7 +17,7 @@ figcaption {
 
 /* Shrink the individual clicked photo in the LightGallery pop-up by 10% */
 .lg-image {
-    max-width: 65% !important;
-    max-height: 65% !important;
+    max-width: 70% !important;
+    max-height: 70% !important;
     margin: auto !important;
 }
