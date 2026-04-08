@@ -8,7 +8,7 @@
   "download-photos": "copy",
   "cleanup": true,
   "photo-quality": 90,
-  "theme": "flow",
+  "theme": "mosaic",
   "css": "./custom.css",
   "footer": "Weitian Chen",
   "usage-stats": false
