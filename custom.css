@@ -4,10 +4,10 @@ body {
 }
 
 /* Hide captions in the full-screen LightGallery view */
-.lg-sub-html {
+/*.lg-sub-html {
     display: none !important;
 }
-
+*/
 /* Shrink the individual clicked photo in the LightGallery pop-up by 10% */
 .lg-image {
     max-width: 72% !important;
