@@ -10,6 +10,6 @@
   "photo-quality": 90,
   "theme": "mosaic",
   "css": "./custom.css",
-  "footer": "Weitian Chen",
+  "footer": "Weitian Chen | <a href=\"https://wchen0.github.io/\">https://wchen0.github.io/</a>",
   "usage-stats": false
 }
