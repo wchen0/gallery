@@ -1,11 +1,206 @@
 /* Your custom styles goes here */
 
+/* ============================================
+   Dark Theme - Global
+   ============================================ */
+
+:root {
+    --bg-primary: #1a1a2e;
+    --bg-secondary: #16213e;
+    --bg-card: #0f3460;
+    --text-primary: #e0e0e0;
+    --text-secondary: #a0a0a0;
+    --text-muted: #707070;
+    --accent: #e94560;
+    --accent-hover: #ff6b81;
+    --border-color: #2a2a4a;
+    --overlay-bg: rgba(0, 0, 0, 0.85);
+}
+
+body {
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+/* All major containers */
+header, nav, .navbar, .header,
+main, .main, .content, .container,
+footer, .footer,
+section, .section,
+.album, .album-list, .albums,
+.gallery, .media, .photos {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+/* Secondary surfaces */
+.card, .album-card, .media-card, .photo-card,
+.panel, .sidebar, .aside,
+.modal, .dialog, .popup,
+.dropdown, .dropdown-menu,
+.tooltip,
+.breadcrumb {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    border-color: var(--border-color);
+}
+
+/* ============================================
+   Headings & Text
+   ============================================ */
+
+h1, h2, h3, h4, h5, h6,
+.title, .heading, .album-title, .gallery-title {
+    color: #ffffff;
+}
+
+p, span, div, li, td, th,
+.text, .description, .caption, .summary {
+    color: var(--text-primary);
+}
+
+a {
+    color: var(--accent);
+}
+
+a:hover, a:focus {
+    color: var(--accent-hover);
+}
+
+/* ============================================
+   Navigation / Header / Footer
+   ============================================ */
+
+.navbar, .nav, .navigation,
+.breadcrumb, .breadcrumbs,
+.top-bar, .toolbar {
+    background-color: var(--bg-secondary) !important;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.navbar a, .nav a, .navigation a,
+.breadcrumb a, .breadcrumbs a {
+    color: var(--text-primary);
+}
+
+.navbar a:hover, .nav a:hover {
+    color: var(--accent);
+}
+
+footer, .footer {
+    background-color: var(--bg-secondary) !important;
+    border-top: 1px solid var(--border-color);
+    color: var(--text-secondary);
+}
+
+footer a, .footer a {
+    color: var(--accent);
+}
+
+/* ============================================
+   Mosaic / Album / Photo Cards
+   ============================================ */
+
+.album, .album-item, .album-card,
+.media, .media-item, .photo,
+.mosaic-item, .mosaic-tile {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+.album:hover, .album-item:hover, .album-card:hover,
+.media:hover, .media-item:hover,
+.mosaic-item:hover, .mosaic-tile:hover {
+    border-color: var(--accent);
+    box-shadow: 0 4px 20px rgba(233, 69, 96, 0.25);
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
+
+.album-title, .media-title, .photo-title {
+    color: #ffffff;
+}
+
+.album-meta, .media-meta, .photo-meta,
+.meta, .date, .count {
+    color: var(--text-secondary);
+}
+
+/* ============================================
+   Buttons
+   ============================================ */
+
+button, .btn, .button,
+input[type="submit"], input[type="button"] {
+    background-color: var(--bg-card);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+button:hover, .btn:hover, .button:hover {
+    background-color: var(--accent);
+    color: #ffffff;
+    border-color: var(--accent);
+}
+
+/* ============================================
+   Inputs & Forms
+   ============================================ */
+
+input, textarea, select {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: var(--accent);
+    outline: none;
+}
+
+/* ============================================
+   LightGallery (Full-screen viewer)
+   ============================================ */
+
+.lg-outer, .lg-backdrop {
+    background-color: var(--overlay-bg) !important;
+}
+
+.lg-toolbar, .lg-sub-html, .lg-actions {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.lg-outer .lg-thumb-outer {
+    background-color: var(--bg-secondary) !important;
+}
+
+/* ============================================
+   Scrollbar
+   ============================================ */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent);
+}
+
 /* Hide date display on mosaic homepage */
 .meta {
     display: none;
-}
-body {
-    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
 }
 
 /* Hide captions in the full-screen LightGallery view */
