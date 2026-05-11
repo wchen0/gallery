@@ -14,3 +14,30 @@ body {
     max-height: 72% !important;
     margin: auto !important;
 }
+
+/* ClustrMaps visitor map - keep it small on all devices */
+.clustrmaps-container {
+    max-width: 300px;
+    margin: 10px auto;
+    overflow: hidden;
+}
+.clustrmaps-container > div,
+.clustrmaps-container > a {
+    max-width: 300px !important;
+}
+.clustrmaps-container canvas,
+.clustrmaps-container img {
+    max-width: 100% !important;
+    height: auto !important;
+}
+
+/* Even smaller on phones */
+@media (max-width: 600px) {
+    .clustrmaps-container {
+        max-width: 220px;
+    }
+    .clustrmaps-container > div,
+    .clustrmaps-container > a {
+        max-width: 220px !important;
+    }
+}
