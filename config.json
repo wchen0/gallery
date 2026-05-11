@@ -10,7 +10,6 @@
   "photo-quality": 90,
   "theme": "mosaic",
   "css": "./custom.css",
-//   "footer": "Weitian Chen | <a href=\"https://wchen0.github.io\">https://wchen0.github.io</a><br><div class=\"clustrmaps-container\"><script type=\"text/javascript\" id=\"clustrmaps\" src=\"//clustrmaps.com/map_v2.js?d=WKY_jFFSzD4oPHu3OLF3rnPlvfKArkESrXDdXZWOsmU&cl=ffffff&w=a\"></script></div>",
-  "footer": "For more information, visit <a href=\"https://wchen0.github.io\">https://wchen0.github.io</a>",
+  "footer": "For more information, please visit <a href=\"https://wchen0.github.io\">https://wchen0.github.io</a>",
   "usage-stats": false
 }

@@ -1,4 +1,9 @@
 /* Your custom styles goes here */
+
+/* Hide date display on mosaic homepage */
+.meta time {
+    display: none;
+}
 body {
     font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
 }
@@ -40,4 +45,47 @@ body {
     .clustrmaps-container > a {
         max-width: 220px !important;
     }
+}
+
+/* ============================================
+   Adaptive Watermark - text version
+   Uses clamp() to scale with image size
+   ============================================ */
+
+/* Watermark on album page thumbnails */
+#media li {
+    position: relative;
+}
+
+#media li a::after {
+    content: "© CWT";
+    position: absolute;
+    bottom: 6%;
+    right: 5%;
+    color: rgba(255, 255, 255, 0.65);
+    font-size: clamp(8px, 2.5vw, 14px);
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    pointer-events: none;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    letter-spacing: 0.5px;
+}
+
+/* Watermark on full-screen LightGallery view */
+.lg-image {
+    position: relative;
+}
+
+/* Use a wrapper approach for lightbox - add watermark via JS-injected style */
+.lg-outer .lg-inner::after {
+    content: "© CWT";
+    position: absolute;
+    bottom: 5%;
+    right: 4%;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: clamp(12px, 3vw, 22px);
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    pointer-events: none;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    z-index: 1080;
 }
