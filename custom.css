@@ -129,6 +129,39 @@ footer a, .footer a {
 }
 
 /* ============================================
+   Main Index / Album Listing - White Text
+   ============================================ */
+
+/* All text inside album cards on the main page */
+.album a, .album-card a, .album-item a,
+.album .title, .album-card .title, .album-item .title,
+.album .name, .album-card .name, .album-item .name,
+.album .folder-name, .album-card .folder-name,
+.mosaic-item a, .mosaic-tile a,
+.mosaic-item .title, .mosaic-tile .title,
+.gallery-item a, .gallery-item .title,
+.folder a, .folder .name, .folder .title,
+.index-item a, .index-item .title,
+.albums a, .album-list a {
+    color: #ffffff;
+}
+
+/* Hover state keeps white but with accent glow */
+.album a:hover, .album-card a:hover, .album-item a:hover,
+.mosaic-item a:hover, .mosaic-tile a:hover,
+.gallery-item a:hover, .folder a:hover,
+.index-item a:hover, .albums a:hover, .album-list a:hover {
+    color: var(--accent);
+}
+
+/* Album container text fallback */
+.album, .album-card, .album-item,
+.mosaic-item, .mosaic-tile,
+.folder, .gallery-item {
+    color: #ffffff;
+}
+
+/* ============================================
    Buttons
    ============================================ */
 
