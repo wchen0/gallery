@@ -1,4 +1,171 @@
-/* Your custom styles goes here */
+/* ============================================
+   Dark Theme + White Text for Mosaic Theme
+   ============================================ */
+
+:root {
+    --bg-primary: #1a1a2e;
+    --bg-secondary: #16213e;
+    --accent: #e94560;
+    --accent-hover: #ff6b81;
+    --border-color: #2a2a4a;
+}
+
+/* ============================================
+   Global Background
+   ============================================ */
+
+html, body {
+    background-color: var(--bg-primary) !important;
+    color: #e0e0e0 !important;
+}
+
+/* ============================================
+   Header / Title
+   ============================================ */
+
+header h1 a {
+    color: #ffffff !important;
+}
+
+/* ============================================
+   Breadcrumbs
+   ============================================ */
+
+nav.breadcrumbs {
+    background-color: var(--bg-secondary) !important;
+}
+
+nav.breadcrumbs a {
+    color: #ffffff !important;
+}
+
+nav.breadcrumbs .separator {
+    color: #cccccc !important;
+}
+
+/* ============================================
+   Album Listing (2026, socket, etc.) - WHITE
+   ============================================ */
+
+/* Album title (h3) - override theme's color: #444 */
+#albums h3 {
+    color: #ffffff !important;
+}
+
+/* Album links */
+#albums a {
+    color: #ffffff !important;
+    text-decoration: none;
+}
+
+/* Hover: album links turn accent color */
+#albums a:hover h3,
+#albums a:hover {
+    color: var(--accent-hover) !important;
+}
+
+/* Album meta text (dates, counts) */
+#albums .meta {
+    color: #bbbbbb !important;
+}
+
+/* Album list item hover effect */
+#albums li {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#albums li:hover {
+    transform: translateY(-2px);
+}
+
+#albums .grid {
+    opacity: 0.85;
+}
+
+#albums li:hover .grid {
+    opacity: 1;
+}
+
+/* ============================================
+   Photo/Media Section
+   ============================================ */
+
+#media li {
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+#media li:hover {
+    box-shadow: 0 4px 20px rgba(233, 69, 96, 0.3);
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
+
+/* ============================================
+   Footer
+   ============================================ */
+
+footer {
+    color: #aaaaaa !important;
+    border-top-color: var(--border-color) !important;
+}
+
+footer a {
+    color: var(--accent) !important;
+}
+
+footer a:hover {
+    color: var(--accent-hover) !important;
+}
+
+/* ============================================
+   Pagination
+   ============================================ */
+
+nav.pagination a {
+    color: #cccccc !important;
+}
+
+nav.pagination .page.current {
+    color: #ffffff !important;
+}
+
+nav.pagination a:hover {
+    color: var(--accent-hover) !important;
+}
+
+/* ============================================
+   Scrollbar
+   ============================================ */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent);
+}
+
+/* ============================================
+   LightGallery (Full-screen viewer)
+   ============================================ */
+
+.lg-outer, .lg-backdrop {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.lg-toolbar, .lg-sub-html, .lg-actions {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+}
 
 /* ============================================
    Dark Theme - Global
