@@ -80,10 +80,13 @@ nav.breadcrumbs .separator {
 
 #albums .grid {
     opacity: 0.85;
+    filter: grayscale(100%);
+    transition: filter 0.5s ease, opacity 0.3s ease;
 }
 
 #albums li:hover .grid {
     opacity: 1;
+    filter: grayscale(0%);
 }
 
 /* ============================================
